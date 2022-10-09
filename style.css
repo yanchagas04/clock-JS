@@ -1,0 +1,73 @@
+@import url("reset/reset.css");
+@import url("content/fonts/fonts.css");
+
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 11, 26);
+    flex-flow: column;
+    row-gap: 50px;
+}
+
+.bg{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(7, 11, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    box-shadow: 0 15px 15px rgba(255, 255, 255, 0.1),
+                0 -15px 15px rgba(255, 255, 255, 0.1),
+                inset 0 15px 15px rgba(255, 255, 255, 0.1),
+                inset 0 -15px 15px rgba(255, 255, 255, 0.1);
+    background-image: url("content/media/relogio.png");
+}
+
+.basic{
+    display: flex;
+    position: absolute;
+    transform-origin: center 0%;
+    background-color: white;
+    border-bottom-left-radius: 95%;
+    border-bottom-right-radius: 95%;
+    border-top-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+}
+
+#sec{
+    height: 240px;
+    width: 7.5px;
+    background-color: red;
+}
+
+#min{
+    height: 195px;
+    width: 7.5px;
+    background-color: rgb(121, 199, 255);
+}
+
+#hour{
+    height: 150px;
+    width: 7.5px;
+    background-color: white;
+}
+
+.divisor{
+    display: flex;
+    position: absolute;
+}
